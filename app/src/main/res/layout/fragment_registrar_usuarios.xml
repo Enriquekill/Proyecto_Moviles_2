@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RegistrarUsuarios">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblLain6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Registrar a un Usuario"
+                android:textColor="#272727"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="214dp"
+                android:layout_height="118dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="38dp"
+                app:srcCompat="@drawable/sign_up" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgArroba3"
+                    android:layout_width="34dp"
+                    android:layout_height="33dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/inCorreo3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblLain6"
+                    app:srcCompat="@drawable/user" />
+
+                <EditText
+                    android:id="@+id/tv_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:ems="10"
+                    android:hint="Nombre"
+                    android:inputType="text"
+                    android:textColor="#000000"
+                    android:textColorHint="#5B5B5B"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="17dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_pass"
+                    android:layout_width="34dp"
+                    android:layout_height="33dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/inCorreo3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblLain6"
+                    app:srcCompat="@drawable/lock" />
+
+                <EditText
+                    android:id="@+id/tv_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:ems="10"
+                    android:hint="Contraseña"
+                    android:inputType="textWebEmailAddress"
+                    android:textColor="#000000"
+                    android:textColorHint="#5B5B5B"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imgArroba3"
+                    app:layout_constraintTop_toBottomOf="@+id/lblLain6" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="17dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_email"
+                    android:layout_width="34dp"
+                    android:layout_height="33dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/inCorreo3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblLain6"
+                    app:srcCompat="@drawable/arroba" />
+
+                <EditText
+                    android:id="@+id/tv_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:ems="10"
+                    android:hint="Correo"
+                    android:inputType="textWebEmailAddress"
+                    android:textColor="#000000"
+                    android:textColorHint="#5B5B5B"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imgArroba3"
+                    app:layout_constraintTop_toBottomOf="@+id/lblLain6" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="17dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_tel"
+                    android:layout_width="34dp"
+                    android:layout_height="33dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/inCorreo3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblLain6"
+                    app:srcCompat="@drawable/telephone" />
+
+                <EditText
+                    android:id="@+id/tv_dir"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:ems="10"
+                    android:hint="Dirección"
+                    android:inputType="textWebEmailAddress"
+                    android:textColor="#000000"
+                    android:textColorHint="#5B5B5B"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imgArroba3"
+                    app:layout_constraintTop_toBottomOf="@+id/lblLain6" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="17dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_rol"
+                    android:layout_width="34dp"
+                    android:layout_height="33dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/inCorreo3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblLain6"
+                    app:srcCompat="@drawable/telephone" />
+
+                <EditText
+                    android:id="@+id/tv_rol"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:ems="10"
+                    android:hint="Rol"
+                    android:inputType="textPassword"
+                    android:textColor="#000000"
+                    android:textColorHint="#5B5B5B"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imgArroba3"
+                    app:layout_constraintTop_toBottomOf="@+id/lblLain6" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_guardar"
+                android:layout_width="298dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/border_radius"
+                android:gravity="center"
+                android:text="Guardar"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

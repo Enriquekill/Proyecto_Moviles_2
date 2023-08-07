@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/Calcula"
+        android:icon="@drawable/baseline_calculate_24"
+        android:title="Calculadora" />
+    <item
+        android:id="@+id/convert"
+        android:icon="@drawable/add"
+        android:title="Agregar" />
+    <item
+        android:id="@+id/crono"
+        android:icon="@drawable/baseline_access_time_filled_24"
+        android:title="Cronometro" />
+</menu>

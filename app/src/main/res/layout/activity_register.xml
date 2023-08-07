@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/inContrasena3"
+            android:layout_width="264dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="60dp"
+            android:ems="10"
+            android:hint="Correo"
+            android:inputType="textEmailAddress"
+            android:textColor="#000"
+            android:textColorHint="#5B5B5B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgTelefono"
+            app:layout_constraintTop_toBottomOf="@+id/tiName" />
+
+        <ImageView
+            android:id="@+id/imgTelefono"
+            android:layout_width="39dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="26dp"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            app:layout_constraintBottom_toTopOf="@+id/imgPsw3"
+            app:layout_constraintEnd_toStartOf="@+id/inContrasena3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgArroba4"
+            app:srcCompat="@drawable/arroba" />
+
+        <EditText
+            android:id="@+id/inDireccion"
+            android:layout_width="264dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="61dp"
+            android:ems="10"
+            android:hint="Numero"
+            android:inputType="number"
+            android:textColor="#000"
+            android:textColorHint="#5B5B5B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgPsw3"
+            app:layout_constraintTop_toBottomOf="@+id/inContrasena3" />
+
+        <ImageView
+            android:id="@+id/imgPsw3"
+            android:layout_width="33dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="10dp"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            app:layout_constraintEnd_toStartOf="@+id/inDireccion"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgTelefono"
+            app:srcCompat="@drawable/maps_and_flags" />
+
+        <EditText
+            android:id="@+id/tiName"
+            android:layout_width="264dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="60dp"
+            android:ems="10"
+            android:hint="Repetir contraseña"
+            android:inputType="textPassword"
+            android:textColor="#000"
+            android:textColorHint="#5B5B5B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgArroba4"
+            app:layout_constraintTop_toBottomOf="@+id/inContrasena2" />
+
+        <ImageView
+            android:id="@+id/imgArroba4"
+            android:layout_width="25dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="10dp"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgPsw2"
+            app:srcCompat="@drawable/lock" />
+
+        <Button
+            android:id="@+id/btnInicioSesion3"
+            android:layout_width="298dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginEnd="61dp"
+            android:layout_marginBottom="112dp"
+            android:background="@drawable/border_radius"
+            android:onClick="savePsw"
+            android:text="Aceptar"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/inContrasena2"
+            android:layout_width="264dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="60dp"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textColor="#000"
+            android:textColorHint="#5B5B5B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgPsw2"
+            app:layout_constraintTop_toBottomOf="@+id/inCorreo3" />
+
+        <EditText
+            android:id="@+id/inCorreo3"
+            android:layout_width="264dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="60dp"
+            android:ems="10"
+            android:hint="Nombre"
+            android:inputType="textWebEmailAddress"
+            android:textColor="#000000"
+            android:textColorHint="#5B5B5B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgArroba3"
+            app:layout_constraintTop_toBottomOf="@+id/lblLain6" />
+
+        <ImageView
+            android:id="@+id/imgArroba3"
+            android:layout_width="34dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/inCorreo3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblLain6"
+            app:srcCompat="@drawable/user" />
+
+        <ImageView
+            android:id="@+id/imgPsw2"
+            android:layout_width="42dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            app:layout_constraintEnd_toStartOf="@+id/inContrasena2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgArroba3"
+            app:srcCompat="@drawable/lock" />
+
+        <TextView
+            android:id="@+id/lblLain6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="37dp"
+            android:clickable="false"
+            android:text="Registra a un usuario"
+            android:textColor="#272727"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="214dp"
+            android:layout_height="118dp"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="47dp"
+            android:layout_marginBottom="38dp"
+            app:layout_constraintBottom_toTopOf="@+id/lblLain6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sign_up" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="Cancelar"
+       android:onClick="backLogin"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-60dp"
+        tools:layout_editor_absoluteY="667dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

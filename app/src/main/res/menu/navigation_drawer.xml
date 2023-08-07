@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/settings_item"
+        android:icon="@drawable/baseline_settings_24"
+        android:onClick="openAjuste"
+        android:title="Ajuste" />
+
+    <item
+        android:id="@+id/herramientas"
+        android:icon="@drawable/baseline_widgets_24"
+        android:onClick="openHerramienta"
+        android:title="Herramientas"></item>
+
+    <item
+        android:id="@+id/logout1"
+        android:icon="@drawable/ic_baseline_create_new_folder_24"
+        android:onClick="doThis1"
+        android:title="Registrar Usuarios" />
+
+    <item
+        android:onClick="doThis"
+        android:id="@+id/logout"
+        android:icon="@drawable/baseline_logout_24"
+        android:title="Cerrar sesión" />
+</menu>
